@@ -24,7 +24,7 @@ function Form(props) {
       setEmail(value.email);
       setHobby(value.hobbies);
     }
-  }, [update]);
+  }, [update, value]);
 
   const saveValue = async (e) => {
     e.preventDefault();
