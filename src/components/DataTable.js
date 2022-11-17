@@ -8,7 +8,12 @@ export default function DataTable() {
   const [list, setList] = React.useState([]);
   const [add, setAdd] = React.useState(false);
   const [update, setUpdate] = React.useState(false);
-  const [value, setValue] = React.useState({});
+  const [value, setValue] = React.useState({
+    username: "",
+    email: "",
+    phone: "",
+    hobbies: "",
+  });
 
   React.useEffect(() => {
     const fetchData = async () => {
