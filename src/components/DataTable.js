@@ -24,6 +24,7 @@ export default function DataTable() {
       };
 
       try {
+        // console.log("tryng to fetch data")
         const data = await axios.get("/api/data/getdata", config);
         setList(data.data);
       } catch (error) {

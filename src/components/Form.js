@@ -62,6 +62,7 @@ function Form(props) {
       }
     } catch (error) {
       if (add) {
+        console.log(error);
         console.log("Can't add the element");
       } else {
         console.log("Can't update the element");
