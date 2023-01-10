@@ -1,5 +1,4 @@
 import * as React from "react";
-// import Button from "@material-ui/core/Button";
 import Form from "./Form";
 import Tables from "./Tables";
 import axios from "../axios";
@@ -24,7 +23,6 @@ export default function DataTable() {
       };
 
       try {
-        // console.log("tryng to fetch data")
         const data = await axios.get("/api/data/getdata", config);
         setList(data.data);
       } catch (error) {
